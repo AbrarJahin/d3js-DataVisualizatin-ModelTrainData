@@ -1,6 +1,5 @@
 var defaultWidth = 900;
 var defaultHeight = 500;
-var allData;
 
 function drawLineChart(sentData, htmlSelector) {
 	$(htmlSelector).empty();
@@ -216,10 +215,10 @@ function drawLineChart(sentData, htmlSelector) {
 
 			d3.selectAll(".mouse-per-line")
 			.attr("transform", function(d, i) {
-				console.log(width/mouse[0])
+				//console.log(width/mouse[0])
 				var xDate = x.invert(mouse[0]),
 					bisect = d3.bisector(function(d) { return d.date; }).right;
-					idx = bisect(d.values, xDate);
+					var idx = bisect(d.values, xDate);
 				
 				var beginning = 0,
 					end = lines[i].getTotalLength(),
@@ -227,7 +226,7 @@ function drawLineChart(sentData, htmlSelector) {
 
 				while (true){
 					target = Math.floor((beginning + end) / 2);
-					pos = lines[i].getPointAtLength(target);
+					var pos = lines[i].getPointAtLength(target);
 					if ((target === end || target === beginning) && pos.x !== mouse[0]) {
 						break;
 					}
