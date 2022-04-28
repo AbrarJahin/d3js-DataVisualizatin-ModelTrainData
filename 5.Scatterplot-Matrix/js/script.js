@@ -12,5 +12,5 @@ function drawScatterPlotMatrix() {
 	$("#file_list").change(function(){
 		drawScatterPlotMatrix();
 	});
-	//drawScatterPlotMatrix();
+	drawScatterPlotMatrix();
 })();
