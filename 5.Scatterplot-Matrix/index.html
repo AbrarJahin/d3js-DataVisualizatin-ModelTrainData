@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <link href="./style.css" rel="stylesheet">
+<body>
+    <select class="form-control" id="file_list">
+        <option value="./data/scatterPlot/pca_tuned_2.csv">pca_tuned_2.csv</option>
+        <option value="./data/scatterPlot/pca_tuned_4.csv">pca_tuned_4.csv</option>
+        <option value="./data/scatterPlot/pca_tuned_5.csv">pca_tuned_5.csv</option>
+        <option value="./data/scatterPlot/pca_untuned_2.csv">pca_untuned_2.csv</option>
+        <option value="./data/scatterPlot/pca_untuned_4.csv">pca_untuned_4.csv</option>
+        <option value="./data/scatterPlot/pca_untuned_5.csv">pca_untuned_5.csv</option>
+        <option value="./data/scatterPlot/tsne_tuned_2.csv">tsne_tuned_2.csv</option>
+        <option value="./data/scatterPlot/tsne_tuned_4.csv">tsne_tuned_4.csv</option>
+        <option value="./data/scatterPlot/tsne_tuned_5.csv">tsne_tuned_5.csv</option>
+        <option value="./data/scatterPlot/tsne_untuned_2.csv">tsne_untuned_2.csv</option>
+        <option value="./data/scatterPlot/tsne_untuned_4.csv">tsne_untuned_4.csv</option>
+        <option value="./data/scatterPlot/tsne_untuned_5.csv">tsne_untuned_5.csv</option>
+    </select>
+    <div id="scatterplot_matrix"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Fallback -->
+    <script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"><\/script>')</script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <!-- <script src="./js/distrochart/distrochart.js" charset="utf-8"></script> -->
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/distrochart/distrochart.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="chart-controller">
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text">Select Epoch From Seekbar</span>
+			<span class="input-group-text" id="chart_epoc_select_data">Year Select</span>
+		</div>
+
+		<input id="chart_epoc_select" class="form-control" type="range" name="chart_epoc_select" min="0" max="500"/>
+
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="mergeAllEpoch"/>
+			<label class="form-check-label" for="mergeAllEpoch">Merge All Epoch Data</label>
+		</div>
+	</div>
+	
+	<select id="chart_learning_rates" class="form-control">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+	<select id="showing_options" class="form-control">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+</div>
+
+<div class="chart-wrapper" id="distro_chart"></div>
+
+<div class="chart-options">
+	<p>Show: </p>
+	<button id="box_plot" type="button" class="btn btn-primary">Box Plot</button>
+	<button id="notched_box_plot" type="button" class="btn btn-primary">Notched Box Plot</button>
+	<button id="violin_plot_unbound" type="button" class="btn btn-primary">Violin Plot Unbound</button>
+	<button id="violin_plot_clamp_to_data" type="button" class="btn btn-primary">Violin Plot Clamp to Data</button>
+	<button id="bean_plot" type="button" class="btn btn-primary">Bean Plot</button>
+	<button id="beeswarm_plot" type="button" class="btn btn-primary">Beeswarm Plot</button>
+	<button id="scatter_plot" type="button" class="btn btn-primary">Scatter Plot</button>
+	<button id="trend_lines" type="button" class="btn btn-primary">Trend Lines</button>
+	<button id="play_animation" type="button" class="btn btn-warning">Play/Pause Animation</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- Fallback -->
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"><\/script>')</script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="./js/distrochart/distrochart.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8" src="./js/script.js">
+
+</script>
+</body>
+</html>
